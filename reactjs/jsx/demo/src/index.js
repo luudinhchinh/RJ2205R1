@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
+// thực hành
 // const fruit =  ["Apple", "Banana", "Orange", "Apricot", "Black rowan", "Cranberry"];
 // const root = ReactDOM.createRoot(document.getElementById('root'))
 // root.render(
@@ -23,6 +23,8 @@ import ReactDOM from 'react-dom/client';
 //   </div>
 //  )}
 //  setInterval(reder,1000)
+
+// bài tập thể hiên thông tin trình duyệt
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <div>Browser's details: {navigator.userAgent}</div>
