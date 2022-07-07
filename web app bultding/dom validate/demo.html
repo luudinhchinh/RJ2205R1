@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css ">
+
+    <link rel="stylesheet" href="./assets/css/base.css">
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        .header {
+
+            height: 120px;
+
+            background-image: linear-gradient(0, #fe6433, #f53e2d);
+
+        }
+
+        .header__navbar {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            flex-direction: row;
+
+        }
+
+        .header__navbar-list {
+
+            list-style: none;
+
+            padding-left: 0;
+
+        }
+        .header__navbar-list-right{
+            display: flex;
+        }
+
+        .header__navbar-item {
+
+            margin: 0 8px;
+
+        }
+
+        .header__navbar-item,
+
+        .header__navbar-item-link {
+
+            display: inline-block;
+
+            font-size: 1.4rem;
+
+            color: var(--white-color);
+
+            text-decoration: none;
+
+            font-weight: 300;
+
+        }
+
+        Base:root {
+
+            --white-color: #fff;
+
+            --black-color: #000;
+
+            --text-color: #333;
+
+        }
+
+        * {
+
+            box-sizing: inherit;
+
+        }
+
+        html {
+
+            font-size: 62.5%;
+
+            line-height: 1.6rem;
+
+            font-family: 'Roboto', sans-serif;
+
+            box-sizing: border-box;
+
+        }
+
+        .grid {
+
+            width: 1200px;
+
+            max-width: 100%;
+
+            margin: 0 auto;
+
+        }
+
+        .grid__full-width {
+
+            width: 100%;
+
+        }
+
+        .grid__row {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="header">
+
+            <div class="grid">
+
+                <nav class="header__navbar">
+
+                    <ul class="header__navbar-list">
+
+                        <li class="header__navbar-item ">vào cửa hàng trên ứng dụng shopee</li>
+
+                        <li class="header__navbar-item ">kết nối </li>
+
+                    </ul>
+
+                    <ul class="header__navbar-list header__navbar-list-right">
+
+                        <li class="header__navbar-item">
+
+                            <a href="" class="header__navbar-item-link">thông báo</a>
+
+                        </li>
+
+                        <li class="header__navbar-item">
+
+                            <a href="" class="header__navbar-item-link">trợ giúp</a>
+
+                        <li>
+
+                        <li class="header__navbar-item">đăng ký</li>
+
+                        <li class="header__navbar-item">đăng nhập</li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+        <div class="container">
+
+        </div>
+
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
