@@ -6,6 +6,7 @@ export default function TimeDown(){
         const time = setInterval(()=>{
             setTime(prevState=> prevState-1)
         },1000)
+        
         return ()=>{
             clearInterval(time)
         }
