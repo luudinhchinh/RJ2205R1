@@ -47,22 +47,22 @@ export default function EmailForm() {
                 {({ errors, handleSubmit }) => (
                     <form onSubmit={handleSubmit}>
 
-                        <div className={`custom-input ${errors.name ? "custom-input-error" : ""}`}>
+                        <div className={`custom-input ${errors.to ? "custom-input-error" : ""}`}>
                             <label>to</label>
-                            <input type="text" name="to" value={form.name || ""} onChange={handleChange} />
+                            <input type="text" name="to" value={form.to || ""} onChange={handleChange} />
                             <p className="error">{errors.name}</p>
                         </div>
 
-                        <div className={`custom-input ${errors.email ? "custom-input-error" : ""}`}>
+                        <div className={`custom-input ${errors.title ? "custom-input-error" : ""}`}>
                             <label>title</label>
-                            <input type="email" name="title" value={form.email || ""} onChange={handleChange} />
+                            <input type="text" name="title" value={form.title || ""} onChange={handleChange} />
                             <p className="error">{errors.email}</p>
                         </div>
 
-                        <div className={`custom-input ${errors.phone ? "custom-input-error" : ""}`} >
+                        <div className={`custom-input ${errors.message ? "custom-input-error" : ""}`} >
                             <label>message</label>
                             <textarea name="message"/>
-                            <p className="error">{errors.phone}</p>
+                            <p className="error">{errors.message}</p>
                         </div>
                         <div>
                             <input type='file' />

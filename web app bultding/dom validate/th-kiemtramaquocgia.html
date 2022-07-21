@@ -10,17 +10,11 @@
 
 <body>
     <script>
-        function is_usZipCode(str) {
-            regexp = /^[0-9]{5}(?:-[0-9]{4})?$/;
-            if (regexp.test(str)) {
-                return true;
-            }
-            return false;
+        let courseStr = 'javascript,php,ruby'
+        function course(str) {
+            console.log(str)
         }
-        var zipcode = "03201 - 2150"
-        console.log(is_usZipCode(zipcode));
-        zipcode = "7892";
-        console.log(is_usZipCode(zipcode));
+        course(courseStr)
     </script>
 </body>
 

@@ -1,24 +1,26 @@
 import { useState } from "react";
 import { Formik } from "formik";
 
-export default function Library(){
-    const [books,setBooks]=useState([])
-    const [form,setForm]=useState({})
-    const [indexSelected,setIndexSelected]=useState(-1)
+export default function Library() {
+    const [books, setBooks] = useState([])
+    const [form, setForm] = useState({})
+    const [indexSelected, setIndexSelected] = useState(-1)
 
-    
+    const handleSubmit = ()=>{
+        setBooks([...books])
+    }
     return (
         <div>
             <h1>Library</h1>
             <div>
                 <label>tiêu đề</label>
-                <input type='text' onChange={(e)=>{setBooks(e.target.value)}} />
+                <input type='text' onChange={(e) => { setBooks(e.target.value) }} />
             </div>
             <div>
                 <label>số lượng</label>
-                <input type='number' onChange={(e)=>{setIndexSelected(e.target.value)}} />
+                <input type='number' onChange={(e) => { setBooks(e.target.value) }} />
             </div>
-            <button>submit</button>
+            <button onClick={handleSubmit}>submit</button>
             <div>
                 <table>
                     <tr>
@@ -26,12 +28,15 @@ export default function Library(){
                         <th>number</th>
                         <th>action</th>
                     </tr>
-                    <tr>
-                        {books.map((book)=>(
-                            <td>{book}</td>
-                        ))}
-                        <td>{indexSelected}</td>
-                    </tr>
+
+                    {books.map((book) => (
+                        <tr>
+                            <td>{book.title}</td>
+                            <td>{book.number}</td>
+                            <td>{book.action}</td>
+                        </tr>
+                    ))}
+
                 </table>
             </div>
         </div>
